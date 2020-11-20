@@ -2,9 +2,10 @@ const config = require('./config/site');
 
 module.exports = {
   siteMetadata: {
-    title: `Minimalistic Bootstrap Gatsby Starter`,
-    description: `A simple Gatsby starter with react-bootstrap`,
+    title: `Food Demo 01`,
+    description: `Restaurant Demo Template`,
     author: `@salemaziel`,
+    siteUrl: `https://food-demo01.viadelweb.com`
   },
   plugins: [
     {
@@ -23,8 +24,8 @@ module.exports = {
      {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://salemaziel.com',
-        sitemap: 'https://salemaziel.com/sitemap.xml',
+        host: 'https://food-demo01.viadelweb.com',
+        sitemap: 'https://food-demo01.viadelweb.com/sitemap.xml',
       }
     },
     {
@@ -39,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-basic-bootstrap`,
-        short_name: `starter`,
+        name: `Food Demo 01`,
+        short_name: `Food 01`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
