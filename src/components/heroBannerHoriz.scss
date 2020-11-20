@@ -83,6 +83,13 @@
         text-transform: uppercase;
         color: lightgrey;
 	}
+	.menubtnBox {
+		margin-top: 15%;
+		@media screen and (max-width: 736px){
+			margin-top: 50%;
+			
+		}
+	}
 }
 
 body.is-preload {

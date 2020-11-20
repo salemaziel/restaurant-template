@@ -27,8 +27,7 @@ const Homepage = () => (
         title="Featured Specials"
         subtitle=""
       />
-    <SectionTilez />
-
+    
 </>
 )
 

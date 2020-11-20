@@ -185,18 +185,20 @@ const NavbarCustom = (props) => {
             itemStyle={{
               background: "transparent!important",
               backgroundColor: "transparent!important",
-              color: "#fff!important",
+              color: "#fff",
               fontSize: "1.5rem",
               fontWeight: "500",
               padding: "10px 0",
               textAlign: "center",
               margin: "1rem auto",
+              listStyle: "none",
             }}
             navStyle={{
               width: "70%",
-              background: "linear-gradient(60deg, #543ab7 0%, #00acc1 100%)",
-              color: "inherit",
+              background: "#dc3545",
+              color: "white",
               maxHeight: "100vh",
+              listStyle: "none",
             }}
             showNav={showNav}
             onHideNav={() => setShowNav(false)}
