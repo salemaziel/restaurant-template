@@ -30,15 +30,15 @@ const Footer = () => (
                   <a href="https://facebook.com"><FaFacebook /></a> 
                   <a href="https://instagram.com"><FaInstagram /></a>
                   <a href="https://twitter.com"><FaTwitter /></a>
-                  <a href="https://researchgate.com"><FaResearchgate /></a>
-                  <a href="https://linkedin.com"><FaLinkedin /></a>
+                  {/*<a href="https://researchgate.com"><FaResearchgate /></a>
+                  <a href="https://linkedin.com"><FaLinkedin /></a>*/}
               </li>
             </ul>
             </div>
           </div>
         </div>
         <p className={footerStyles.copyright}>
-          Created by Salem © All Rights Reserved
+          Created by <a href="https://salemaziel.com">Salem Aziel</a> © All Rights Reserved
           </p>
 
       </footer>

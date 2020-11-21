@@ -7,6 +7,7 @@ import SectionThree from './sectionThree'
 import HeroBannerHoriz from '../../heroBannerHoriz'
 import SectionTilez from '../../SectionTilez/section2Tiles'
 import FeaturedFoodCardSection from '../../FeaturedFoodCardSection'
+import FeaturedFoodCardSection2 from '../../FeaturedFoodCardSection2'
 
 
 
@@ -18,7 +19,7 @@ const Homepage = () => (
     subText="Mexican Food"
     />
     <SectionSchedule />
-    <FeaturedFoodCardSection
+    {/*<FeaturedFoodCardSection
         bg="white"
         textColor="dark"
         size="md"
@@ -26,7 +27,12 @@ const Homepage = () => (
         bgImageOpacity={1}
         title="Featured Specials"
         subtitle=""
-      />
+    />*/}
+          <FeaturedFoodCardSection2
+          bg="white"
+          textColor="dark"
+          size="lg"
+          title="Featured Specials" />
     
 </>
 )

@@ -5,6 +5,7 @@ StockTaco01
 import './sectionSchedule.scss'
 
 import TimeTable from './timeTable'
+import TimeTableDesktop from './timeTableDesktop'
 import {Helmet} from 'react-helmet'
 
 import Fade from 'react-reveal/Fade'
@@ -23,6 +24,7 @@ const SectionSchedule = (props) => {
     <a href="#" className="special">Learn more</a>*/}
     <Fade top>
       <TimeTable />
+      <TimeTableDesktop />
       </Fade>
     </div>
   </div>

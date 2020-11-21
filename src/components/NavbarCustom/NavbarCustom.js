@@ -88,12 +88,12 @@ const NavbarCustom = (props) => {
             }}
           >
             <Nav
-              className="ml-auto"
+              className="ml-4 d-flex"
               defaultActiveKey="/"
               onSelect={(selectedKey) => navigateTo(`${selectedKey}`)}
             >
-              <Nav.Item to="/quienes-somos" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/quienes-somos" active={false}>
+              <Nav.Item to="/#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#" active={false}>
                   Quienes Somos
                 </Nav.Link>
               </Nav.Item>
@@ -104,19 +104,19 @@ const NavbarCustom = (props) => {
                 </Nav.Link>
           </Nav.Item>*/}
 
-              <Nav.Item to="/servicios" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/servicios" active={false}>
+              <Nav.Item to="/#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#" active={false}>
                   Servicios
                 </Nav.Link>
               </Nav.Item>
 
-              <Nav.Item to="/contacto" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/contacto" active={false}>
+              <Nav.Item to="/#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#" active={false}>
                   Contacto
                 </Nav.Link>
               </Nav.Item>
 
-              <NavDropdown
+              {/*<NavDropdown
                 as={Link}
                 href="/mas"
                 to="/mas"
@@ -138,7 +138,7 @@ const NavbarCustom = (props) => {
                 <NavDropdown.Item eventKey="/#">
                   Dropdown Item 4
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown>*/}
             </Nav>
             <Nav className="mr-1"></Nav>
           </Navbar>
@@ -172,14 +172,14 @@ const NavbarCustom = (props) => {
               <Link rel="preload" className={navStyles.navItem} to="/">
                 <FaHome />
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/about">
-                Quien Somos
+              <Link rel="preload" className={navStyles.navItem} to="/#">
+                About
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/contacto">
-                Contacto
+              <Link rel="preload" className={navStyles.navItem} to="/#">
+                Contact
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/servicios">
-                Servicios
+              <Link rel="preload" className={navStyles.navItem} to="/#">
+                Order Online
               </Link>,
             ]}
             itemStyle={{
