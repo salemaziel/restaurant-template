@@ -18,7 +18,7 @@ const SectionSchedule = (props) => {
     </Helmet>
         <section id="one" className="wrapper spotlight">
   <div className="inner">
-    <div className="content">
+    <div className="content"  id="hours" >
       {/*<h2 className="major">Magna arcu feugiat</h2>
       <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
     <a href="#" className="special">Learn more</a>*/}

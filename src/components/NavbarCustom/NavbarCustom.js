@@ -88,11 +88,11 @@ const NavbarCustom = (props) => {
             }}
           >
             <Nav
-              className="ml-4 d-flex"
+              className="ml-auto d-flex"
               defaultActiveKey="/"
               onSelect={(selectedKey) => navigateTo(`${selectedKey}`)}
             >
-              <Nav.Item to="/#" className={navStyles.navItem}>
+              {/*<Nav.Item to="/#" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/#" active={false}>
                   Quienes Somos
                 </Nav.Link>
@@ -102,7 +102,7 @@ const NavbarCustom = (props) => {
                 <Nav.Link as={Link} to="/faq" active={false}>
                   FAQ
                 </Nav.Link>
-          </Nav.Item>*/}
+          </Nav.Item>* /}
 
               <Nav.Item to="/#" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/#" active={false}>
@@ -140,7 +140,35 @@ const NavbarCustom = (props) => {
                 </NavDropdown.Item>
               </NavDropdown>*/}
             </Nav>
-            <Nav className="mr-1"></Nav>
+            <Nav className="mr-1"
+                          defaultActiveKey="/"
+                          onSelect={(selectedKey) => navigateTo(`${selectedKey}`)}
+            >
+            <Nav.Item to="/#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#hours" active={false}>
+                  Hours
+                </Nav.Link>
+              </Nav.Item>
+
+              {/*<Nav.Item to="/faq" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/faq" active={false}>
+                  FAQ
+                </Nav.Link>
+          </Nav.Item>*/}
+
+              <Nav.Item to="/#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#specials" active={false}>
+                  Specials
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item to="/#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#" active={false}>
+                  Contacto
+                </Nav.Link>
+              </Nav.Item>
+
+            </Nav>
           </Navbar>
           <SideNav
             openFromRight={true}
@@ -172,10 +200,10 @@ const NavbarCustom = (props) => {
               <Link rel="preload" className={navStyles.navItem} to="/">
                 <FaHome />
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/#">
-                About
+              <Link rel="preload" className={navStyles.navItem} to="/#hours">
+                Hours
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/#">
+              <Link rel="preload" className={navStyles.navItem} to="/#specials">
                 Contact
               </Link>,
               <Link rel="preload" className={navStyles.navItem} to="/#">

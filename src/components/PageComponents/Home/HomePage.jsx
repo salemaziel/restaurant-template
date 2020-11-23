@@ -5,7 +5,7 @@ import SectionTwo from './sectionTwo'
 import SectionThree from './sectionThree'
 
 import HeroBannerHoriz from '../../heroBannerHoriz'
-import SectionTilez from '../../SectionTilez/section2Tiles'
+//import SectionTilez from '../../SectionTilez/section2Tiles'
 import FeaturedFoodCardSection from '../../FeaturedFoodCardSection'
 import FeaturedFoodCardSection2 from '../../FeaturedFoodCardSection2'
 
@@ -18,7 +18,7 @@ const Homepage = () => (
     title="Alberto's"
     subText="Mexican Food"
     />
-    <SectionSchedule />
+    <SectionSchedule/>
     {/*<FeaturedFoodCardSection
         bg="white"
         textColor="dark"

@@ -209,7 +209,7 @@ export default class FeaturedFoodCards2 extends Component {
       ]
     };
     return (
-      <div className="py-4 mb-4">
+      <div className="py-4 mb-4" id="specials">
         <Slider {...settings}>
           <div>
           <Card>

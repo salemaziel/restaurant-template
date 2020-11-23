@@ -1,11 +1,15 @@
 
 
+nav div ul li {
+    background-color: transparent!important;
+}
+
 .NoDesktop {
     display: none;
 }
 
 .NoMobile {
-    display: block;
+    display: flex;
 }
 
 
