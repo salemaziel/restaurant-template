@@ -9,7 +9,7 @@ nav div ul li {
 }
 
 .NoMobile {
-    display: flex;
+    display: block;
 }
 
 
@@ -55,6 +55,9 @@ nav div ul li {
     .NoMobile {
         display: none;
     }
+#navbar-nav {
+    display: none!important;
+}
     
 }
 

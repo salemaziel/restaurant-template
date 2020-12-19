@@ -32,11 +32,10 @@ const NavbarCustom = (props) => {
         fixed
         bg={scroll ? "danger" : ""}
         variant="dark"
-        expand="md"
+        expand="lg"
         className={navStyles.headerNavbar}
       >
         <Container>
-          <Nav.Item to="/">
             <Navbar.Brand as={Link} to="/">
               <img
                 className="d-inline-block align-top"
@@ -45,7 +44,6 @@ const NavbarCustom = (props) => {
                 height="60"
               ></img>
             </Navbar.Brand>
-          </Nav.Item>
           {/*<Navbar.Brand /*as={Link} to="/"* />
             <Dropdown>
             <Dropdown.Toggle variant="" id="dropdown-basic">
@@ -81,7 +79,7 @@ const NavbarCustom = (props) => {
             id="navbar-nav"
             className="justify-content-end NoMobile"
             style={{
-              /*display: "flex",*/
+              display: "flex",
               flexBasis: "auto",
               flexGrow: "1",
               alignItems: "center",

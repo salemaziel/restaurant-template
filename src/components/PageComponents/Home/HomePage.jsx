@@ -9,6 +9,7 @@ import HeroBannerHoriz from '../../heroBannerHoriz'
 import FeaturedFoodCardSection from '../../FeaturedFoodCardSection'
 import FeaturedFoodCardSection2 from '../../FeaturedFoodCardSection2'
 
+import HoursLocations from './hoursLocations'
 
 
 const Homepage = () => (
@@ -19,6 +20,7 @@ const Homepage = () => (
     subText="Mexican Food"
     />
     <SectionSchedule/>
+    {/*<HoursLocations />*/}
     {/*<FeaturedFoodCardSection
         bg="white"
         textColor="dark"
