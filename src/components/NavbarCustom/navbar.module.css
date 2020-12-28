@@ -30,7 +30,6 @@
 .navItem a:focus-within,
 .navItem a:focus-visible,
 .navItem a:active {
-    background-color: #8b0000;
     color: white;
 }
 

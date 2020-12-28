@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
+import { FaInstagram, FaFacebook, FaTwitter, FaYelp } from 'react-icons/fa'
 
 
 import footerStyles from "./footer.module.css";
@@ -27,6 +27,7 @@ const Footer = () => (
             <ul className={footerStyles.iconBulleted}>
               <h3>Like Us On Social Media</h3>
               <li className={footerStyles.Social}>
+              <a href="https://yelp.com"><FaYelp /></a>
                   <a href="https://facebook.com"><FaFacebook /></a> 
                   <a href="https://instagram.com"><FaInstagram /></a>
                   <a href="https://twitter.com"><FaTwitter /></a>
