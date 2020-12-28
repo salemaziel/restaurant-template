@@ -1,5 +1,4 @@
 import React from "react";
-import { StockTaco01 } from "../../../images/index";
 import "./sectionSchedule.scss";
 
 import TimeTable from "./timeTable";
@@ -18,12 +17,12 @@ const SectionSchedule = (props) => {
           async
         ></script>
       </Helmet>
+      <div id="hours" />
       <section id="one" className="wrapper spotlight">
         <div className="inner">
-          <div className="content" id="hours">
-            {/*<h2 className="major">Magna arcu feugiat</h2>
-      <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-    <a href="#" className="special">Learn more</a>*/}
+          
+          <div className="content" >
+        
             <Fade>
               <TimeTable />
               <TimeTableDesktop />
@@ -34,9 +33,8 @@ const SectionSchedule = (props) => {
           <div className="content">
             <Fade>
               <span
-                className="glf-button"
+                className="orderButtonBlock"
                 style={{
-                  backgroundColor: "red",
                   margin: "2rem auto 4rem",
                   display: "block",
                   textAlign: "center",
@@ -45,24 +43,13 @@ const SectionSchedule = (props) => {
                 data-glf-ruid="8f336410-bd0a-4292-8e0a-fc8f6e24b461"
               >
                 {" "}
-                See MENU &amp; Order
+                See Menu &amp; Order
               </span>
             </Fade>
           </div>
         </div>
       </section>
 
-      {/*
-<section id="one" className="wrapper spotlight">
-  <div className="inner">
-    <a href="#" className="image"><img src={StockTaco01} alt /></a>
-    <div className="content">
-      <h2 className="major">Magna arcu feugiat</h2>
-      <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-      <a href="#" className="special">Learn more</a>
-    </div>
-  </div>
-</section>*/}
     </>
   );
 };

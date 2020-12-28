@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
-import { FaEnvelope, FaInstagram, FaFacebook, FaTwitter, FaResearchgate, FaLinkedin } from 'react-icons/fa'
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
 
 
 import footerStyles from "./footer.module.css";
@@ -8,24 +7,25 @@ import footerStyles from "./footer.module.css";
 const Footer = () => (
 
       <footer id="footer" className={footerStyles.Footer}>
+        <div id="contact" />
         <div className={footerStyles.content}>
           <div className={footerStyles.inner}>
             <section className={footerStyles.about}>
-              <h3>Button to specific link</h3>
+              <h3>Contact Us</h3>
               <p>
-               A link to something specific that someone may be looking for on your website.
+               Got A Question or Concern? 
               </p>
               <ul className={footerStyles.actions}>
                 <li>
                   <a href="#" className={footerStyles.button}>
-                    Link to thing
+                  Send Us A Message
                   </a>
                 </li>
               </ul>
             </section>
             <div className={footerStyles.contact}>
             <ul className={footerStyles.iconBulleted}>
-              <h3>Get In Touch</h3>
+              <h3>Like Us On Social Media</h3>
               <li className={footerStyles.Social}>
                   <a href="https://facebook.com"><FaFacebook /></a> 
                   <a href="https://instagram.com"><FaInstagram /></a>

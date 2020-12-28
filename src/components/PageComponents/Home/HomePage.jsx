@@ -1,35 +1,24 @@
 import React from 'react'
 
 import SectionSchedule from './section1Schedule'
-import SectionTwo from './sectionTwo'
-import SectionThree from './sectionThree'
+
 
 import HeroBannerHoriz from '../../heroBannerHoriz'
 //import SectionTilez from '../../SectionTilez/section2Tiles'
-import FeaturedFoodCardSection from '../../FeaturedFoodCardSection'
 import FeaturedFoodCardSection2 from '../../FeaturedFoodCardSection2'
 
-import HoursLocations from './hoursLocations'
 
 
 const Homepage = () => (
 <>
 
     <HeroBannerHoriz
-    title="Alberto's"
+    title="Restaurant"
     subText="Mexican Food"
     />
     <SectionSchedule/>
     {/*<HoursLocations />*/}
-    {/*<FeaturedFoodCardSection
-        bg="white"
-        textColor="dark"
-        size="md"
-        bgImage=""
-        bgImageOpacity={1}
-        title="Featured Specials"
-        subtitle=""
-    />*/}
+    <div id="specials" />
           <FeaturedFoodCardSection2
           bg="white"
           textColor="dark"

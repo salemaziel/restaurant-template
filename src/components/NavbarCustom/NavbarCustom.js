@@ -3,16 +3,16 @@ import { Link, navigateTo } from "gatsby";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Dropdown from "react-bootstrap/Dropdown";
+
 
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import SideNav from "react-simple-sidenav";
 
 import navStyles from "./navbar.module.css";
 
 import { FaHome } from "react-icons/fa";
+
+import {LogoWhite} from '../../images/index'
 
 //then
 
@@ -39,7 +39,7 @@ const NavbarCustom = (props) => {
             <Navbar.Brand as={Link} to="/">
               <img
                 className="d-inline-block align-top"
-                src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600246731/rbl-art-designs/albertos-logo-2_fqr69v.png"
+                src={LogoWhite}
                 alt="Logo"
                 height="60"
               ></img>
@@ -142,7 +142,7 @@ const NavbarCustom = (props) => {
                           defaultActiveKey="/"
                           onSelect={(selectedKey) => navigateTo(`${selectedKey}`)}
             >
-            <Nav.Item to="/#" className={navStyles.navItem}>
+            <Nav.Item to="/#hours" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/#hours" active={false}>
                   Hours
                 </Nav.Link>
@@ -154,15 +154,15 @@ const NavbarCustom = (props) => {
                 </Nav.Link>
           </Nav.Item>*/}
 
-              <Nav.Item to="/#" className={navStyles.navItem}>
+              <Nav.Item to="/#specials" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/#specials" active={false}>
                   Specials
                 </Nav.Link>
               </Nav.Item>
 
-              <Nav.Item to="/#" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/#" active={false}>
-                  Contacto
+              <Nav.Item to="/#contact" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/#contact" active={false}>
+                  Contact
                 </Nav.Link>
               </Nav.Item>
 
@@ -202,10 +202,10 @@ const NavbarCustom = (props) => {
                 Hours
               </Link>,
               <Link rel="preload" className={navStyles.navItem} to="/#specials">
-                Contact
+                Specials
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/#">
-                Order Online
+              <Link rel="preload" className={navStyles.navItem} to="/#contact">
+                Contact
               </Link>,
             ]}
             itemStyle={{

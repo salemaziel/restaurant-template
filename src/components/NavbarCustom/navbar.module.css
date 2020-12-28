@@ -14,14 +14,23 @@
 }
 
 .navItem {
-    margin-right: 1.5rem;
-    color: white;
+    margin-right: 2rem;
+    color: white!important;
+    font-size: 22px;
 }
 
 .navItem a {
     text-decoration: none;
     font-weight: 500;
     border-bottom: none;
+    color: white;
+}
+
+.navItem a:focus,
+.navItem a:focus-within,
+.navItem a:focus-visible,
+.navItem a:active {
+    background-color: #8b0000;
     color: white;
 }
 

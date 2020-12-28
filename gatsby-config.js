@@ -43,10 +43,10 @@ module.exports = {
         name: `Food Demo 01`,
         short_name: `Food 01`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#dc3545`,
+        theme_color: `#dc3545`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/generic-logo.png`, // This path is relative to the root of the site.
       },
     },
 //    { 

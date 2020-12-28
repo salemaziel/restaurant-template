@@ -24,7 +24,7 @@ function FeaturedFoodCardSection2(props) {
           spaced={true}
           className="text-center"
         />
-        <Fade top>
+        <Fade>
         <FeaturedFoodCards2 />
         </Fade>
       </Container>
