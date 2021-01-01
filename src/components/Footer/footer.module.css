@@ -247,6 +247,13 @@ ul.actions li {
   padding-left: 2rem;
 }
 
+.Social a:hover,
+.Social a:focus,
+.Social a:focus-visible,
+.Social a:focus-within {
+  color: red;
+}
+
 
 p.copyright {
   font-size: 0.8em;
